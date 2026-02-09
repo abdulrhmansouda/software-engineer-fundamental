@@ -14,7 +14,8 @@ While the lines between these roles are often blurred in the workplace, they can
 The following diagram shows how each role builds upon the other. A Software Engineer typically encompasses the skills of a Developer and a Programmer, but with an added focus on system-wide architecture.
 
 ```mermaid
-graph TD
+%%{init: {'flowchart': {'subGraphTitleMargin': {'top': 10, 'bottom': 10}, 'padding': 20, 'htmlLabels': true}}}%%
+graph LR
     subgraph SE ["🏙️ Software Engineer (The Architect)"]
         direction TB
         SE_Focus["Scalability, Reliability & Architecture"]
@@ -26,7 +27,7 @@ graph TD
             SD_Mind["How do I build a product that solves the problem?"]
             
             subgraph P ["🧱 Programmer (The Specialist)"]
-                direction TB
+                direction LR
                 P_Focus["Logic, Algorithms & Syntax"]
                 P_Mind["How do I make this function work?"]
             end
