@@ -1,8 +1,5 @@
 # FILE VERSION: 0.0.1
 
-# Online markview (.md) files viewer
-- **View .md files**: [https://markdownlivepreview.dev/](https://markdownlivepreview.dev/)
-
 # Software Industry Roles: A Comparison
 
 While the lines between these roles are often blurred in the workplace, they can be distinguished by their scope of responsibility and the "size" of the problems they solve.
