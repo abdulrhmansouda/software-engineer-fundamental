@@ -33,15 +33,15 @@ graph TD
         end
     end
 
-    style P fill:#f9f,stroke:#333,stroke-width:2px
-    style SD fill:#bbf,stroke:#333,stroke-width:2px
-    style SE fill:#dfd,stroke:#333,stroke-width:2px
-    style P_Focus fill:#fff,stroke:#333
-    style SD_Focus fill:#fff,stroke:#333
-    style SE_Focus fill:#fff,stroke:#333
-    style P_Mind fill:#ffe,stroke:#999,stroke-dasharray:3
-    style SD_Mind fill:#ffe,stroke:#999,stroke-dasharray:3
-    style SE_Mind fill:#ffe,stroke:#999,stroke-dasharray:3
+    style P fill:#fcd34d,stroke:#b45309,stroke-width:2px,color:#78350f
+    style SD fill:#67e8f9,stroke:#0891b2,stroke-width:2px,color:#164e63
+    style SE fill:#a5b4fc,stroke:#4f46e5,stroke-width:2px,color:#312e81
+    style P_Focus fill:#fef3c7,stroke:#d97706,color:#92400e
+    style SD_Focus fill:#cffafe,stroke:#06b6d4,color:#155e75
+    style SE_Focus fill:#e0e7ff,stroke:#6366f1,color:#3730a3
+    style P_Mind fill:#fffbeb,stroke:#f59e0b,stroke-dasharray:3,color:#92400e
+    style SD_Mind fill:#ecfeff,stroke:#22d3ee,stroke-dasharray:3,color:#0e7490
+    style SE_Mind fill:#eef2ff,stroke:#818cf8,stroke-dasharray:3,color:#4338ca
 ```
 
 ---
