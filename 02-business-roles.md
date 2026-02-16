@@ -51,9 +51,21 @@ graph TB
         JD --> UXD --> SUD --> LD --> DD
     end
     
+    subgraph Analysis ["📊 Business Analysis Track"]
+        direction TB
+        JBA["Junior BA"]
+        BA["Business Analyst"]
+        SBA["Senior BA"]
+        LBA["Lead BA"]
+        DBA["Director of BA"]
+        
+        JBA --> BA --> SBA --> LBA --> DBA
+    end
+    
     VPP --> CPO
     DPj --> COO
     DD --> CPO
+    DBA --> COO
 
     style CEO fill:#a855f7,stroke:#7c3aed,stroke-width:2px,color:#fff
     style COO fill:#a855f7,stroke:#7c3aed,stroke-width:2px,color:#fff
@@ -78,10 +90,17 @@ graph TB
     style LD fill:#7c3aed,stroke:#6d28d9,stroke-width:2px,color:#fff
     style DD fill:#6d28d9,stroke:#5b21b6,stroke-width:2px,color:#fff
     
+    style JBA fill:#fed7aa,stroke:#f97316,stroke-width:2px,color:#9a3412
+    style BA fill:#fb923c,stroke:#f97316,stroke-width:2px,color:#fff
+    style SBA fill:#f97316,stroke:#ea580c,stroke-width:2px,color:#fff
+    style LBA fill:#ea580c,stroke:#c2410c,stroke-width:2px,color:#fff
+    style DBA fill:#c2410c,stroke:#9a3412,stroke-width:2px,color:#fff
+    
     style Exec fill:#f3e8ff,stroke:#a855f7,stroke-width:2px
     style Product fill:#dcfce7,stroke:#22c55e,stroke-width:2px
     style Project fill:#fee2e2,stroke:#ef4444,stroke-width:2px
     style Design fill:#ede9fe,stroke:#8b5cf6,stroke-width:2px
+    style Analysis fill:#ffedd5,stroke:#f97316,stroke-width:2px
 ```
 
 ---
@@ -252,13 +271,16 @@ graph TB
 graph TB
     subgraph Collaboration ["🤝 Role Collaboration"]
         Customer["👥 Customer"]
+        BA["📊 Business Analyst"]
         PM["📦 Product Manager"]
         PjM["📋 Project Manager"]
         UX["🎨 UX Designer"]
         Tech["👨‍💻 Tech Lead"]
         Dev["⌨️ Developers"]
         
-        Customer -->|"needs"| PM
+        Customer -->|"business needs"| BA
+        BA -->|"requirements"| PM
+        BA -->|"specifications"| Tech
         PM -->|"what to build"| UX
         PM -->|"priorities"| PjM
         UX -->|"designs"| Tech
@@ -268,6 +290,7 @@ graph TB
     end
     
     style Customer fill:#e0e7ff,stroke:#6366f1,stroke-width:2px,color:#3730a3
+    style BA fill:#f97316,stroke:#ea580c,stroke-width:2px,color:#fff
     style PM fill:#22c55e,stroke:#16a34a,stroke-width:2px,color:#fff
     style PjM fill:#ef4444,stroke:#dc2626,stroke-width:2px,color:#fff
     style UX fill:#8b5cf6,stroke:#7c3aed,stroke-width:2px,color:#fff
